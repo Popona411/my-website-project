@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<title>Pona Vocational Ltd | Welding & Fabrication Training</title>
+<link rel="icon" type="image/x-icon" href="fav.jpg">
+
+</head>
+
+<body>
+
+<header>
+
+<h1><img src="log.jpg">Pona Vocational Ltd</h1>
+
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#programs">Programs</a>
+<a href="#admission">Admission</a>
+<a href="#contact">Contact</a>
+<a href="#" onclick="openLogin()">Student Login</a>
+</nav>
+<i class="fa-solid fa-search"></i>
+</header>
+
+<section class="hero">
+
+<h2>Professional Welding & Fabrication Training</h2>
+
+<p>Build a successful technical career with hands-on industrial training.</p>
+
+<button onclick="scrollToAdmission()">Apply Now</button>
+
+</section>
+
+<section id="about" class="section">
+
+<h2>About Pona Vocational Ltd</h2>
+
+<p>
+
+Pona Vocational Ltd is a modern vocational institute dedicated to training the next generation of professional welders and metal fabricators.  
+Our training combines practical hands-on workshops, industrial exposure, and technical theory.
+
+</p>
+
+<p>
+
+Our mission is to equip students with skills that are highly demanded in construction, oil & gas, manufacturing, and engineering industries.
+
+</p>
+
+</section>
+
+<section id="programs" class="section">
+
+<h2>Our Training Programs</h2>
+
+<div class="programs">
+
+<div class="card">
+<img src="mm.jpg">
+<h3>Arc Welding</h3>
+<p>Learn modern arc welding used in construction and metal industries.</p>
+</div>
+
+<div class="card">
+<img src="hh.jpg">
+<h3>Metal Fabrication</h3>
+<p>Design and build metal gates, structures and equipment.</p>
+</div>
+
+<div class="card">
+<img src="kk.jpg">
+<h3>Gas Welding</h3>
+<p>Professional oxy-acetylene welding techniques.</p>
+</div>
+
+<div class="card">
+<img src="bb.jpg">
+<h3>Industrial Safety</h3>
+<p>Learn workplace safety standards used in industries.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="free">
+<div style="display:flex;">
+<img src="pp.jpg" style="float:left;height:500px;">
+<p style="font-size:45px;"><b>Mastering the Art of Welding: Your Partner in Skill Development</p>
+<p>At Pona Vocational Ltd, we believe that skilled welders and fabricators are the backbone of any thriving industry. <br>Nestled 
+in the heart of Port Harcourt, Nigeria, we are dedicated to bridging the skills gap through our comprehensive vocational training 
+programs. With a blend of hands-on experience and theoretical knowledge, we equip our students with the expertise needed to excel 
+in metal fabrication, custom repairs, and creative welding projects. Whether you’re looking to start a career in welding or enhance 
+your skills, our passionate team of experts is here to guide you every step of the way. Discover the difference quality training can 
+make and unleash your potential with us. </p>
+</div>
+</section>
+
+<section id="admission" class="section">
+
+<h2>Student Admission</h2>
+
+<div class="form-box">
+
+<form>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address">
+
+<input type="tel" placeholder="Phone Number">
+
+<select>
+<option>Select Program</option>
+<option>Arc Welding</option>
+<option>Metal Fabrication</option>
+<option>Gas Welding</option>
+<option>Industrial Welding Safety</option>
+</select>
+
+<textarea placeholder="Why do you want to join this program?"></textarea>
+
+<button type="submit">Submit Application</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section id="contact" class="section">
+
+<h2>Contact Us</h2>
+
+<p> Email: info@ponavocational.com <br> ponavocational61@yahoo.com</p>
+
+<p><i class="fa-solid fa-phone"></i> +234 803 309 4374</p>
+
+<p>Location: Nigeria</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Pona Vocational Ltd | Welding & Fabrication Training Institute</p>
+
+</footer>
+
+<div class="login-modal" id="login">
+
+<div class="login-box">
+
+<h3>Student Login</h3>
+
+<input type="text" placeholder="Student ID">
+
+<input type="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+<br><br>
+
+<button onclick="closeLogin()">Close</button>
+
+</div>
+
+</div>
+
+<script>
+
+function openLogin(){
+document.getElementById("login").style.display="flex";
+}
+
+function closeLogin(){
+document.getElementById("login").style.display="none";
+}
+
+function login(){
+alert("Student login system will connect to database in full version.");
+}
+
+function scrollToAdmission(){
+document.getElementById("admission").scrollIntoView({behavior:'smooth'});
+}
+
+</script>
+
+</body>
+</html>
